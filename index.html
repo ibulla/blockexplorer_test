@@ -1,6 +1,37 @@
-<html>
-<head></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockexplorer.li/test</title>
+    <style>
+        body {
+            background-color: lightgray;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #rocket {
+            width: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: rocketAnimation 2s infinite alternate;
+        }
+
+        @keyframes rocketAnimation {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+            100% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
+    </style>
+</head>
 <body>
-Hello Git
+    <img id="rocket" src="rocket.png" alt="Rocket" />
 </body>
 </html>
